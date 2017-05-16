@@ -1,0 +1,39 @@
+<view class="play">
+    <video src="{{video_detail.videourl}}" binderror=""></video>
+    <view class="video-info">
+      <view class="video-title">{{video_detail.title}}</view>
+      <view class="video-time">
+        <text>活动频道</text>
+        <text>时长{{video_detail.video_time}}</text>
+      </view>
+      <view class="video-des">
+        {{video_detail.description}}
+      </view>
+    </view>
+</view>
+<!--<view class="page">
+  <view class="page__bd">
+      <view class="section__title">horizontal scroll</view>
+      <scroll-view class="scroll-view_H" scroll-x="true" style="width: 100%">
+        <view id="green" class="scroll-view-item_H bc_green"></view>
+        <view id="red"  class="scroll-view-item_H bc_red"></view>
+        <view id="yellow" class="scroll-view-item_H bc_yellow"></view>
+        <view id="blue" class="scroll-view-item_H bc_blue"></view>
+      </scroll-view>
+    </view>
+</view>-->
+<view class="page">
+  <view class="page__bd">
+    <view class="posid">相关推荐</view>
+    <scroll-view class="recommend_scroll_x_box" scroll-x="true">
+      <view class="recommend_hot_box" wx:for="{{hotList}}">
+        <view class="posid_img">
+          <image src="http://image2.thepaper.cn/image/5/720/636.jpg" class="recommend_hot_image"></image>
+          <image src="{{item.pic}}" class="recommend_hot_image"></image>
+          <image src="../images/video_play.png" class="play-pic"></image>
+        </view>
+        <view class="posid_title">探秘分子料理 金枪鱼的冰与火</view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

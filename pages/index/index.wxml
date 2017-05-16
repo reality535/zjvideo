@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<import src="../template/videolist.wxml"/>
+
+
+<view class="navbar">
+  <view class="navbar-item" wx:for="{{navbar}}" wx:for-index="idx" data-idx="{{idx}}" bindtap="swichNav">
+    <text class="navbar-text {{currentNavbar==idx ? 'active' : ''}}">{{item}}</text>
+  </view>
+</view>
+
+<scroll-view scroll-y="true" bindscrolltoupper="pullDownRefresh" class="{{currentNavbar==0 ? '' : 'hidden'}}" style="height: {{systemInfo.windowHeight}}px;">
+  <template is="videoList" data="{{name,list}}"></template>
+</scroll-view>
+

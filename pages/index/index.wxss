@@ -1,0 +1,80 @@
+/**index.wxss**/
+page{
+  background: #000;
+}
+.navbar {
+    display: flex;
+    border-bottom: 1px solid #000;
+    background: #000;
+}
+.navbar-item {
+    flex: 1.0;
+    text-align: center;
+    font-size: 28rpx;
+    color: #fff;
+    margin-bottom: -1px;
+}
+.navbar-text {
+    display: block;
+    width: 120rpx;
+    padding: 10px 0;
+    margin:0 auto;
+}
+.navbar-text.active {
+    border-bottom: 2px solid #01b1fb;
+    font-weight: bold;
+}
+
+.video-item{
+  position: relative;
+}
+.videoDiv{
+  position: relative;
+  width: 100%;
+  height: 410rpx;
+}
+.card_node{
+  position: absolute;
+  top: 18rpx;
+  color: #fff;
+  font-size: 22rpx;
+  margin-left: 24rpx;
+}
+.card_word{
+  position: absolute;
+  top: 320rpx;
+  color: #fff;
+  width:100%;
+  text-align: center;
+  font-size: 30rpx;
+}
+.video-tag{
+  font-size: 20rpx;
+  color: #a3a3a3;
+  line-height: 26rpx;
+}
+.video-thumb image{
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  display: block;
+  height: 410rpx;
+}
+.play-pic{
+  position: absolute;
+  z-index: 100;
+  width: 76rpx;
+  height: 76rpx;
+  left: 50%;
+  top: 50%;
+  margin-left: -38rpx;
+  margin-top: -38px;
+}
+.video-des{
+  padding: 30rpx 20rpx 50rpx;
+  color: #b8b8b8;
+  font-size: 26rpx;
+}
+.hidden {
+    display: none;
+}
